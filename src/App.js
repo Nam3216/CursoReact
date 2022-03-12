@@ -17,6 +17,11 @@ function App() {
         >
           Learn React
         </a>
+        <div className='esto-new'>
+          Nuevo div agregado 
+        </div>
+        
+
       </header>
     </div>
   );
