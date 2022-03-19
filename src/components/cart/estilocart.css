@@ -1,0 +1,17 @@
+.cart-widget{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    justify-content: right;
+    
+    
+    
+    
+}
+
+.cart-widget img{
+    
+    height: 120px;
+    width: 120px;
+    
+}

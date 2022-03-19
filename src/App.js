@@ -3,7 +3,8 @@ import './App.css';
 import NavBar from "./components/NavBar"
 import NavBarClass  from './components/NavBarClass';
 //import Cards from "./components/card/Cards.js";
-import ListProducts from './components/card/CardContainer';
+import ItemListContainer from './components/card/itemListContainer';
+import ArticlesContainer from './components/notas/ArticlesContainer';
 
 function App() {
   return (
@@ -13,13 +14,14 @@ function App() {
         
       <div className='container'>
         
-        <ListProducts>
+        <ItemListContainer>
         <p>Listas 1</p>
-        </ListProducts>
-        <ListProducts/>
+        </ItemListContainer>
+        <ItemListContainer/>
 
       </div>
-      
+
+      <ArticlesContainer/>
       
 
            

@@ -1,0 +1,17 @@
+.articles-container{
+    text-align: center;
+}
+
+.articles{
+    margin:0px auto;
+    width: 450;
+    height: 450;
+
+}
+
+.articles img{
+    width: 250;
+    height: 250;
+
+}
+

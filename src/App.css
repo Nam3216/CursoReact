@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 14px;
-  background-color: rgb(104, 98, 98);
+  background-color: /*rgb(104, 98, 98)*/ black;
  
 }
 .App {
@@ -40,6 +40,7 @@ li,a{
  align-items: flex-end;
  height: 80px;  
  
+ 
 }
 
 li{
@@ -51,6 +52,14 @@ a:hover{
   color: aqua;
 }
 
+header{ /*contenedor de todo el nav*/
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-logo{
+  margin-right: 100px;
+}
 
 
 

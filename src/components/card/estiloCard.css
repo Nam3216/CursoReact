@@ -1,18 +1,15 @@
-.app{
-    text-align: center;
-    margin: 0;
-}
-
-.container  {
-    margin: 0 auto;
-}
-
 
 .card{
+    margin-bottom: 10px;
+    
+}
+
+.container-cards{
     display: inline-block;
     padding: 20px;
     color: white;
-    
-    
+       
+
 }
+
 
