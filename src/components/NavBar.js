@@ -1,6 +1,6 @@
 import React from "react"
 import Button from '@mui/material/Button';
-import CartWidget from "./cart/cart";
+import CartWidget from "./cart-navbar/cart";
 
 const NavBar=()=>{
 
@@ -21,7 +21,7 @@ const NavBar=()=>{
                 
               </ul>
               
-            <CartWidget/>
+            <CartWidget/> 
          </header>
          
 

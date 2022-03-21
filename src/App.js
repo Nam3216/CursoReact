@@ -6,18 +6,21 @@ import NavBarClass  from './components/NavBarClass';
 import ItemListContainer from './components/card/itemListContainer';
 import ArticlesContainer from './components/notas/ArticlesContainer';
 
+
+
 function App() {
   return (
     <div className="App">
         <NavBar />
-      
+     
         
       <div className='container'>
-        
+      
+      
         <ItemListContainer>
         <p>Listas 1</p>
         </ItemListContainer>
-        <ItemListContainer/>
+       
 
       </div>
 

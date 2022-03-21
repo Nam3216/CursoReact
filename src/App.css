@@ -2,7 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 14px;
-  background-color: /*rgb(104, 98, 98)*/ black;
+  background-color: /*rgb(104, 98, 98)*/ black
+  
  
 }
 .App {
@@ -62,6 +63,7 @@ header{ /*contenedor de todo el nav*/
 }
 
 
-
-
+.botones a{
+  color: black;
+}
 

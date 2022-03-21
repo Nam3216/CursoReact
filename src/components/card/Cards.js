@@ -6,10 +6,11 @@ import "./estiloCard.css"
 const Cards= (props)=>{//recibe las propiedades por props, (las q puse en app.js), las recibe como objeto. para entrar es props.nombre. props.talle
     return(
     <div className="card">
+        <img src={props.img}/>
         <p>{props.title}</p>
         <p>Precio: {props.price}</p>
         <p>Talle: {props.talle}</p>
-        <button>Comprar</button>
+        
     </div>
 
     )

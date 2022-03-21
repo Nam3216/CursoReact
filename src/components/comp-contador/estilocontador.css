@@ -1,0 +1,26 @@
+.contador{
+    background-color: rgb(240, 224, 227);
+    height:150x;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid rgb(218, 201, 201);
+    
+}
+.contador p{
+    margin: 0px auto;
+    width: 50px;
+    border-radius: 30px;
+}
+
+.contador button{
+    color: aqua;
+    font-weight: 600;
+    border-radius: 30px;
+    
+}
+
+.contador button:first-child{
+    margin-right: 50px;
+}
