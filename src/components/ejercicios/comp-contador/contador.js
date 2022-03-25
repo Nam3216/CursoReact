@@ -23,7 +23,7 @@ const Contador=(props)=>{
             <button onClick={restar}>-</button>
             <button onClick={sumar}>+</button>
             <p>{count}</p>
-            <button onClick={()=>props.onAdd(count)}>Modificar pedido</button>
+            <button onClick={()=>props.onAdd(count)}>Agregar</button>
         </div>
     )
 }

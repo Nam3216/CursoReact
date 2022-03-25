@@ -1,6 +1,6 @@
 import React from "react"
 import Button from '@mui/material/Button';
-import CartWidget from "./cart-navbar/cart";
+import CartWidget from "./cart";
 
 const NavBar=()=>{
 
