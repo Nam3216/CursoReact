@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from "react"
 import Item  from "./Item"
-import {ProductsMock,productsMock} from "../MockList/ProductsMock"//al definir asi, primero el archivo, despues la funcion, me deja llamar esa funcion
+import {ProductsMock} from "../MockList/ProductsMock"//al definir asi, primero el archivo, despues la funcion, me deja llamar esa funcion
 
 const ItemList=()=>{
     //1mock list
@@ -40,7 +40,7 @@ const ItemList=()=>{
         <div className="item-list">
             {listProducts.map((product)=>{
                 
-                return null 
+                return <Item data={product} key={product.id}  /> 
                 
             })}
 

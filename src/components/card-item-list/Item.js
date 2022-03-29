@@ -3,7 +3,7 @@ import "./EstiloItem.css"
 import Contador from "../ejercicios/comp-contador/contador"
 //import { DetailProduct } from "../events/detailProduct";//entre{} tengo q traer nombre archivo y funcion para q funcione
 
-const Item=({data,detail})=>{
+const Item=({data})=>{
     const{product,size,price,brand,id,img}=data //desestructuracion
   
     
@@ -15,7 +15,10 @@ const Item=({data,detail})=>{
     }
    
     
-  
+    const detail=(id)=>{
+        alert(JSON.stringify(id.id))
+
+    }
 
     
 

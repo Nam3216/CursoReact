@@ -3,7 +3,7 @@ import ItemDetail from "./ItemDetail"
 //importo el js con el el mock de productos
 import {ProductsMock} from "../MockList/ProductsMock"//al definir asi, primero el archivo, despues la funcion, me deja llamar esa funcion
 //import ItemListContainer from "../card-item-list/itemListContainer"
-import Item from "../card-item-list/Item"
+//import Item from "../card-item-list/Item"
 
 
 
@@ -32,38 +32,30 @@ const ItemDetailContainer=()=>{
             })
         },[])
 
-    //funcion onclick para boton ver detalle de Item.js en ItemListContainer
+    //funcion onclick para boton ver detalle de Item.js en ItemListContainer, iba a item
 
-    const detail=(id)=>{
+    /*const detail=(id)=>{
         stateValue(JSON.stringify(id.id))
 
-    }
+    }*/
 
-    //funcion onclick para no show
-    const noShow=()=>{
+    //funcion onclick para no show iba a item detail
+   /* const noShow=()=>{
         stateValue(0)
-    }
+    }*/
     console.log("idprod",value) 
 
     return(
         <div>
-            <div className="item-list">
-                {
-                description.map((product)=>{
-                    
-                        return  <Item data={product} key={product.id} detail={detail} />
-                    
-                })}
-                
-            </div>
+            
             <div className="item-detail-container">  
                 {
                 description.map((product)=>{
-                    if (value>0){
-                        if(value==product.id){
-                            return <ItemDetail dataOk={product} key={product.id} noShow={noShow}/>
-                        }
-                    }
+                   
+                        
+                            return <ItemDetail dataOk={product} key={product.id} />
+                        
+                    
                         
                                 
                     

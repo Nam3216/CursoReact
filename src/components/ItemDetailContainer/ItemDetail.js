@@ -21,7 +21,7 @@ const ItemDetail=({dataOk,noShow})=>{
                 <p>Precio: $ {price}</p>
                 <p>{description}</p>
                 <button>Comprar</button>
-                <button onClick={noShow}>Ocultar detalle</button>
+                <button >Ocultar detalle</button>
                 
                 
             </div>
