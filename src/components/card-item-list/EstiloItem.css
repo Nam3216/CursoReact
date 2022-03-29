@@ -4,9 +4,8 @@
 
 
 .item-list-item{
-    height: fit-content;
-    width: fit-content;
   
+    width: fit-content;
     margin-bottom: 50px;
     display: inline-block;
     margin: 0px auto;
@@ -26,6 +25,8 @@
     width: 300px;
     object-fit: cover;
     opacity: 0.7;
+   
+    border: 1px solid white;
 }
 
 .item-list-item img:hover{
