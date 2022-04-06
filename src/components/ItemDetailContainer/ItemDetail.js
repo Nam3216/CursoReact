@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from "react"
 import "./estiloItemDetail.css"
 
-const ItemDetail=({dataOk,noShow})=>{
+const ItemDetail=({data})=>{
 
-    const{product,size,price,brand,id,img,description}=dataOk
+    const{product,size,price,brand,id,img,description}=data
    
 
     

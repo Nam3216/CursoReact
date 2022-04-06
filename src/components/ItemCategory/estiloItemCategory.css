@@ -1,50 +1,29 @@
+.item-category{
+    display: inline-block;
+}
 .item-list{
     text-align: center;
-  
-}
-
-a   {
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  font-weight: 600;
- 
- 
-}
-
-.container-cards{
-    display: inline-block;
-    padding: 60px;
-    color: white;
-    margin-top: 0px auto;
-    height: fit-content;
-   
-
 }
 
 
-.item-list-item{
+.item-list-item-category{
   
     width: fit-content;
-   
-    height: fit-content;
+    margin-bottom: 50px;
     display: inline-block;
     margin: 0px auto;
-    margin-bottom: 50px;
     text-align: center;
     border: 1px solid white;
-    margin-right: 30px;
-  
+    margin-right: 10px;
 }
 
-.item-list-item p{
+.item-list-item-category p{
     color: white;
     font-size: 14px;
     font-weight: 600;
-   
 }
 
-.item-list-item img{
+.item-list-item-category img{
     height: 300px;
     width: 300px;
     object-fit: cover;
@@ -53,22 +32,22 @@ a   {
     border: 1px solid white;
 }
 
-.item-list-item img:hover{
+.item-list-item-category img:hover{
     
     opacity: 1;
 }
 .contador{/*la clase contenedor de contador*/
     margin: 0px auto;
 }
-.item-list-item button{
+.item-list-item-category button{
     border-radius: 30px;
     color: white;
     opacity: 0.7;
     
 }
 
-.item-list-item button:hover{
+.item-list-item-category button:hover{
     color: white;
-   /* background-color:  rgb(26, 96, 165);*/
+    background-color:  rgb(26, 96, 165);
     opacity: 1;
 }

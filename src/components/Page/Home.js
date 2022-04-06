@@ -1,15 +1,13 @@
-import React from "react";
-import ItemList from "../card-item-list/ItemList";
-import ItemListContainer from "../card-item-list/itemListContainer";
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+import React from "react"
 
-const Home=()=>{
+export const Home=()=>{
 
-    return (
-            <div>
-                <ItemListContainer/>
-                <ItemDetailContainer/>
-            </div>)
+    return(
+
+        <div className="home">
+              <img src="./logo.png" className="App-logo-Home" alt="logo" />
+              <p>Ropa para vos. Pasa por Las Secciones.</p>
+        </div>
+    )
 }
 
-export default Home;

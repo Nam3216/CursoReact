@@ -1,8 +1,8 @@
 .cart-widget{
-    display: flex;
-    height: 300px;
-    width: 300px;
-    justify-content: right;
+    /*display: flex;*/
+    height: 100px;
+    width: 100px;
+   
     
     
     
@@ -11,7 +11,7 @@
 
 .cart-widget img{
     
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     
 }

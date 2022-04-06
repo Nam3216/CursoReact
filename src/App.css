@@ -2,21 +2,42 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 14px;
-  background-color: /*rgb(104, 98, 98)*/ black
+  background-color:  black;
   
  
+}
+
+
+header{
+  width: 100%;
+  
+}
+
+
+.App-header{/*para que se vea a lo largo el navbar*/
+  width: inherit;
+  
+}
+
+
+p{
+  color: white;
 }
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 100px;
+  height: 80px;
   pointer-events: none;
   float: left;
   
 }
 
+.App-logo img{
+  height: 50px;
+  width: 50px;
+}
 
 .App-link {
   color: #61dafb;
@@ -26,8 +47,73 @@
   
 }
 
+/*----------navbarb-----*/
+
+#navbar-b{
+ 
+  height: 120px;
+  text-align: center;
+  position: sticky  ;
+  background-color: blue;
+  
+    
+}
+.me-auto{
+  margin-left: 5%;
+}
+
+#basic-nav-dropdown{
+  font-size: 16px;
+  margin-left: 30px;
+}
+#navbar-b a{/*aunque esten en p, saca el estilo en a*/
+  text-decoration: none;
+  list-style: none;
+  font-weight: 600;
+  
+  
+}
+
+#navbar-b p{
+  font-size: 16px;
+  margin-left: 30px;
+  
+  
+
+}
+#navbar-b p:hover{/*aunque esten en p, saca el estilo en a*/
+   color: aqua;
+  
+ 
+  
+}
+.contenedor-logo{
+  margin-right: 100px;
+}   
+
+.dropdown{
+  text-align: center;
+}
+.dropdown p{
+  color: black;
+  background-color: white;
+  margin: 0px auto;
+  width: 50px;
+  
+  
+  
+}
+
+.dropdown p:hover{
+  color: black;
+  background-color: rgb(233, 231, 235);
+}
+
+
+
+
 /*-----------------------------navegador*/
-li,a{
+/*li,a{
   text-decoration: none;
   list-style: none;
   color: white;
@@ -36,10 +122,12 @@ li,a{
  
 }
 
+
 .navegador-ul{
   display: flex;
  align-items: flex-end;
  height: 80px;  
+ 
  
  
 }
@@ -49,21 +137,23 @@ li{
   
 }
 
-a:hover{
+.navegador-ul a:hover{
   color: aqua;
 }
-
-header{ /*contenedor de todo el nav*/
+/*contenedor de todo el nav*/
+/*
+header{ 
   display: flex;
   justify-content: center;
-}
-
+  height: 150px;
+}*/
+/*
 .contenedor-logo{
   margin-right: 100px;
 }
 
-
+/*
 .botones a{
   color: black;
-}
+}*/
 
