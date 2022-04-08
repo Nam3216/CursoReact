@@ -17,7 +17,7 @@ const ItemCategory=({data})=>{
                         <p>{product} talle: {size}</p>
                         <p>Marca: {brand}</p>
                         <p>$ {price}</p>
-                        <button><Link to={`/productos/${id}`}>Ver Detalle </Link></button>
+                       <Link to={`/productos/${id}`}> <button>Ver Detalle </button></Link>
                         </div>
              
         </div>

@@ -1,7 +1,6 @@
 import React, {useState,useEffect} from "react"
 import Item  from "./Item"
 import {ProductsMock} from "../MockList/ProductsMock"//al definir asi, primero el archivo, despues la funcion, me deja llamar esa funcion
-import { ClassNames } from "@emotion/react"
 
 const ItemList=()=>{
     //1mock list
@@ -28,7 +27,6 @@ const ItemList=()=>{
     useEffect(()=>{
         getData().then((listProducts)=>{
             stateListProducts(listProducts)
-            setLoading(false)//cdo obtengo la lista pongo loading false para que muestre la listas
             console.log(listProducts)
         }).catch(()=>{
             console.log("hubo un error en base de datos")
@@ -41,16 +39,11 @@ const ItemList=()=>{
     return(
 
         <div className="item-list">
-            { loading?(
-                <p>Cargando</p>
-            ):(
-            
-            listProducts.map((product)=>{
+            {listProducts.map((product)=>{
                 
                 return <Item data={product} key={product.id}  /> 
                 
-            })
-            )}
+            })}
 
 
         </div>
@@ -60,5 +53,3 @@ const ItemList=()=>{
     }
 
     export default ItemList;
-
-   

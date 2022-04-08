@@ -54,7 +54,7 @@ p{
   height: 120px;
   text-align: center;
   position: sticky  ;
-  background-color: blue;
+  
   
     
 }
@@ -93,7 +93,7 @@ p{
 
 .dropdown{
   text-align: center;
-}
+ }
 .dropdown p{
   color: black;
   background-color: white;

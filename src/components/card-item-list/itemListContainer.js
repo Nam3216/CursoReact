@@ -1,6 +1,6 @@
 import { Children } from "react";
 //import Cards from "./Cards"
-import Contador from "../ejercicios/comp-contador/contador"
+//import Contador from "../ejercicios/comp-contador/contador"
 import ItemList from "./ItemList";
 
 //es un componente q va a tener de hijos a las cards. por eso importo cards

@@ -1,7 +1,8 @@
 
 import React,{useState} from "react";
 import "./estilocontador.css"
-const Contador=(props)=>{
+
+const ItemCount=(props)=>{
 
     const [count, stateCount]=useState(props.initial)
 
@@ -18,15 +19,16 @@ const Contador=(props)=>{
     }
 //importante es definir una funcion flecha si agarro por props una funcion de otro componente, y a la vez quiero pasar parametro.´+
     return(
-
+        <div className="cont-contador">
         <div className="contador">
             <button onClick={restar}>-</button>
             <button onClick={sumar}>+</button>
             <p>{count}</p>
             <button onClick={()=>props.onAdd(count)}>Agregar</button>
         </div>
+        </div>
     )
 }
 
 
-export default Contador;
+export default ItemCount;

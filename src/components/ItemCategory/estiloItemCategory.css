@@ -41,13 +41,14 @@
 }
 .item-list-item-category button{
     border-radius: 30px;
-    color: white;
+    color: black;
     opacity: 0.7;
+    background-color: white;
     
 }
 
 .item-list-item-category button:hover{
-    color: white;
-    background-color:  rgb(26, 96, 165);
+  
+   
     opacity: 1;
 }
