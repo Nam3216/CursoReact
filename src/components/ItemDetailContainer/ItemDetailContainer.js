@@ -27,7 +27,7 @@ const ItemDetailContainer=()=>{
         useEffect(()=>{
             GetItem().then((description)=>{
                 stateDescription(description)
-                console.log(description,"description")
+                //console.log(description,"description")
             
             })
         },[])
@@ -43,7 +43,7 @@ const ItemDetailContainer=()=>{
    /* const noShow=()=>{
         stateValue(0)
     }*/
-    console.log("idprod",value) 
+    //console.log("idprod",value) 
 
     return(
         <div>

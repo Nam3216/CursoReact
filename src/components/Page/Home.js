@@ -11,3 +11,5 @@ export const Home=()=>{
     )
 }
 
+// loom
+//https://www.loom.com/share/c35ec340d46f480c924e2ed8268aee53

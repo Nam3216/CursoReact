@@ -11,41 +11,44 @@ import Products from "./components/Page/Products"
 import DetailProduct from './components/Page/DetailProduct';
 import CategoryProduct from './components/Page/CategoryProducts';
 import {Home} from "./components/Page/Home"
+import {Context} from "./Context/CartContext"
+import {CartPage} from "./components/Page/CartPage"
 
-//<ItemDetailContainer/> poner esto
+
 
 function App() {
   return (
     <div className="App">
      
-     <BrowserRouter>
-        <NavBar />
-     
-       
-      <div className='container'>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/productos" element={<Products/>}/>
-        <Route path="/productos/categoria/:category" element={<CategoryProduct/>}/>
-        <Route path="/productos/:id" element={<DetailProduct/>}/>
-        <Route path="/nosotros" element={<p>Hola</p>}/>
-        <Route path="/contacto" element={<p>Hola</p>}/>
-        <Route path="/cart" element={<p>Cart</p>}/>
+     <Context>
+      <BrowserRouter>
+          <NavBar />
+      
+        
+        <div className='container'>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/productos" element={<Products/>}/>
+          <Route path="/productos/categoria/:category" element={<CategoryProduct/>}/>
+          <Route path="/productos/:id" element={<DetailProduct/>}/>
+          <Route path="/nosotros" element={<p>Hola</p>}/>
+          <Route path="/contacto" element={<p>Hola</p>}/>
+          <Route path="/cart" element={<CartPage/>}/>
 
 
-      </Routes>
-      
-       
-       
+        </Routes>
+        
+        
+        
 
-      </div>
-      
+        </div>
+        
 
-      
-      
+        
+        
 
-      </BrowserRouter>     
-      
+        </BrowserRouter>     
+      </Context>
     </div>
    
      

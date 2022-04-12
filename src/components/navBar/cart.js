@@ -1,14 +1,23 @@
-import React from "react"
+import React,{useEffect, useState} from "react"
 import "./estilocart.css"
-
+import {useContext}from "react"
+import CartContext from "../../Context/CartContext"
+import {Link} from "react-router-dom"
 
 const CartWidget=()=>{
+    const{cartList,addProduct,deleteProduct,count,setCount}=useContext(CartContext)
+    
 
+    
+    
+  
     return(
 
         <div className="cart-widget">
 
-            <img src="imagen-carrito.png"/>
+           <Link to="/cart" ><img src="imagen-carrito.png"/></Link>
+           
+            <p>{count}</p>
             
 
         </div>

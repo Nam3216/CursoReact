@@ -1,0 +1,103 @@
+
+.div-cart-remove-all button{
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.div-cart-remove-all button:hover{
+    
+    opacity:1;
+}
+
+.div-cart img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+td{
+    padding: 50px;
+    font-weight: 600;
+}
+
+#button-empty-cart{
+ 
+    background-color: white;
+}
+
+.contador button{
+    /*display: inline-block;*/
+    color: black;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    opacity: 0.7;
+    width: fit-content;
+   
+    
+}
+
+#button-delete{
+    background-color: white;
+}
+
+.container-cart{
+    text-align: center;
+}
+
+.table-cart tr{/*improtante esto para tablas, y dividir el width en cada td hasta llegar a 100%*/
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.div-head{
+    height: 500px;
+    border-bottom: 1px solid blue;
+
+}
+.table-cart tr:first-child{
+    height: 100px;
+    
+}
+tr td:first-child{
+    width: 20%;
+   
+}
+tr td:nth-child(2){
+    width: 13%;
+}
+tr td:nth-child(3){
+    width: 18%;
+}
+tr td:nth-child(4){
+    width: 13%;
+}
+tr td:nth-child(5){
+    width: 13.3%;
+}
+tr td:nth-child(6){
+    width: 15%;
+}
+
+tr td:nth-child(7){
+    width: 13.3%;
+}
+
+tr td{
+    color: white;
+   
+}
+
+
+
+
+
+
+
+
