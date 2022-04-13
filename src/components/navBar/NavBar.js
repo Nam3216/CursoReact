@@ -8,10 +8,12 @@ import Nav from'react-bootstrap/Nav'
 import NavDropdown from'react-bootstrap/NavDropdown'
 import Form from'react-bootstrap/Form'
 import FormControl from'react-bootstrap/FormControl'
+import CartContext from "../../Context/CartContext"
+import { useContext } from "react";
 
 const NavBar=()=>{
 
-    
+    const{cartList}=useContext(CartContext)
   
   
     return(
@@ -40,12 +42,15 @@ const NavBar=()=>{
           
           
         </NavDropdown>
+        <Nav.Link ><Link to='/cart'><p>Acceder a carrito</p></Link></Nav.Link>
         <Nav.Link ><Link to='/nosotros'><p>Nosotros</p></Link></Nav.Link>
         <Nav.Link ><Link to='/contacto'><p>Contactenos</p></Link></Nav.Link>
         
       </Nav>
     </Navbar.Collapse>
-    <CartWidget/>   
+      {cartList.length>0 &&(
+        <CartWidget/>  
+      )} 
   </Container>
   
 </Navbar>

@@ -88,7 +88,7 @@ const Context=({children})=>{
                setPrice(product.quantity*product.price)//pone como estado el nuevo precio que se va a ver en CartPrice
              }
              setCheckForTotalPrice(false)//comprobacion para mostrar en cartPage uno u otro precio
-
+             setCheckForTotalPrice(true)//una vez que se muestra vuelve a true
              
          })
 

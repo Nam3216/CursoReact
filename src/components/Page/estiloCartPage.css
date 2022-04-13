@@ -27,7 +27,14 @@ td{
 #button-empty-cart{
  
     background-color: white;
+    font-weight: 600;
 }
+
+#boton-terminar-compra{
+    background-color: white;
+    font-weight: 600;
+}
+
 
 .contador button{
     /*display: inline-block;*/
@@ -43,8 +50,15 @@ td{
 
 #button-delete{
     background-color: white;
+    font-weight: 600;
+
+}
+#boton-carrito-vacio{
+    background-color: white;
+    font-weight: 600;
 }
 
+/*------------------tabla---------------*/
 .container-cart{
     text-align: center;
 }
