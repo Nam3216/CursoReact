@@ -37,8 +37,8 @@ return(
                     <td><p>Producto</p></td>
                     <td><p>Descripcion</p></td>
                     <td><p>Precio Unitario</p></td>
+                   
                     <td><p>Cantidad</p></td>
-                    <td><p>Modificar</p></td>
                     <td><p>Precio Total</p></td>
                     <td><p>Eliminar</p></td>
                     
@@ -53,7 +53,7 @@ return(
                             <td><img src={product.img} alt="cargando"/></td>
                             <td>{product.product} {product.brand} </td>
                             <td> {product.price}</td>
-                            <td> {product.quantity}</td>
+                           
                             <td >  <ItemCount stock={10} initial={product.quantity} onAdd={modifyQuantity} product={product} msg={"Modifica Cantidad Final"}/></td>
                             <td>{checkForTotalPrice ?(
                                 product.quantity*product.price

@@ -3,6 +3,8 @@ import {ProductsMock} from "../MockList/ProductsMock"
 import { useParams } from "react-router-dom";
 //import "./estiloItemDetail.css"
 import ItemDetail from "../ItemDetailContainer/ItemDetail";
+import { collection,getDocs } from "firebase/firestore";
+import db from "../../firebase";
 
 const DetailProduct=()=>{
     
@@ -11,25 +13,37 @@ const DetailProduct=()=>{
     const{id}=useParams()//podria usar directo useParams().id
 
     //obtengo lista mock para usarla local
-
+/* no uso mas, uso el de firebase
     const GetList=()=>{
         return new Promise((resolve,reject)=>{
             return resolve(ProductsMock())
+        })
+    }*/
+
+    const GetList=async ()=>{
+        const items=collection(db,"listProducts")
+        const productsSnapshot=await getDocs(items)
+        const productsList=productsSnapshot.docs.map((doc)=>{
+            let product=doc.data()
+            product.id=doc.id
+            return product
+        })
+
+        productsList.map((product)=>{ //obtengo producto por id que pidio usuario
+            if(product.id==id){
+                setObjectProduct(product)
+            }
         })
     }
 
     //ejectuo GetList
     useEffect(()=>{
-        GetList().then((products)=>{
-            setProducts(products)
-            
-            GetProduct(products)//llamo funcion GetProduct de abajo, le paso la lista obtenida
-        })
+        GetList()
     },[])
 
     //funcion GetProduct, para iterar lista y encontrar product que coincida con id elegido por usuari
 
-    const GetProduct=(products)=>{
+   /* const GetProduct=(products)=>{ no uso mas, todo en getList
        
         products.map((product)=>{
             if(product.id==parseInt(id)){
@@ -37,7 +51,7 @@ const DetailProduct=()=>{
                 
             }
         })
-    }
+    }*/
 
     return(
         <div>

@@ -2,9 +2,16 @@ import React,{useState,useEffect}from "react"
 import ItemDetail from "./ItemDetail"
 //importo el js con el el mock de productos
 import {ProductsMock} from "../MockList/ProductsMock"//al definir asi, primero el archivo, despues la funcion, me deja llamar esa funcion
-//import ItemListContainer from "../card-item-list/itemListContainer"
-//import Item from "../card-item-list/Item"
+//import{collection, getDocs} from "firebase/firestore"
+//import db from "../../firebase"
+/*  const GetItem=()=>{
+            return new Promise ((resolve,reject)=>{
+                setTimeout(()=>{
+                    return resolve(ProductsMock())
+                },2000)
 
+            })
+        }*/
 
 
 const ItemDetailContainer=()=>{
@@ -15,22 +22,15 @@ const ItemDetailContainer=()=>{
     const[value,stateValue]=useState(0)
 
     //obtener promise
-        const GetItem=()=>{
-            return new Promise ((resolve,reject)=>{
-                setTimeout(()=>{
-                    return resolve(ProductsMock())
-                },2000)
-
-            })
-        }
+      
 //moun useEffect
-        useEffect(()=>{
+        /*useEffect(()=>{
             GetItem().then((description)=>{
                 stateDescription(description)
-                //console.log(description,"description")
+              
             
             })
-        },[])
+        },[])*/
 
     //funcion onclick para boton ver detalle de Item.js en ItemListContainer, iba a item
 
