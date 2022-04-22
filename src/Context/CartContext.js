@@ -7,7 +7,8 @@ const Context=({children})=>{
     const[count,setCount]=useState(0)//es para el contador de productos que se ve en carrito navegadr
     const[check,setCheck]=useState(true)//cdo cambia esto que se ejecute counter. sino en el addProduct cdo no cambia lista, pero si cantidad no se ejecutaba
     const[price,setPrice]=useState(0)//aca se guarda price total nuevo cdo se modifica cant desde cartpage
-    const[checkForTotalPrice,setCheckForTotalPrice]=useState(true)//indicador para saber si en cartPage columna Precio total muestra primero el precio total segun lista carrito, si cambia este estado es porque se cambio cantidad desde cartPage, entonces muestra nueva cantidasd que se guarda price
+    const[checkForTotalPrice,setCheckForTotalPrice]=useState(true)//si es true, muestra precio segun como se abrio cartPage , si cambia este estado false es porque se cambio cantidad desde cartPage, entonces muestra nueva cantidasd que se guarda price
+    const[finalPrice,setFinalPrice]=useState(0)
 
     const addProduct=(product,quantity)=>{
         console.log("add", quantity)
@@ -48,7 +49,7 @@ const Context=({children})=>{
         Counter()
         setCheck(true)
     },[checkForTotalPrice])
-
+   
   
 //funcion para borrar un producto
     const deleteProduct=(product)=>{
@@ -61,10 +62,8 @@ const Context=({children})=>{
     }
 
 
-//para contador despues de delete product //para el contador de cantidad en cart
+//para contador despues de delete product //para el contador que muestra la cantidad total del carrito en cartwidget
     const Counter=()=>{
-        
-        
         let counter=0
         cartList.map((product)=>{
             counter=counter+product.quantity
@@ -72,16 +71,31 @@ const Context=({children})=>{
         setCount(counter)
        
     }
-
+//modificarCantidad, es el onClick de ITemCount en CartPahge. se activa cuando usuario modifica cantidad de producto en el carrito
+    const modifyQuantity=(quantity,product)=>{
+        console.log(quantity,product,"modify")
+        cartList.map((item)=>{
+            if(item.id==product.id){
+                item.quantity=quantity
+            }
+        })
+        TotalPrice(product)
     
-   
+    }
+
+    //cuando se modifica cantidad, se corre funcion Counter para que actualice el total que aparece cartWidget
+    useEffect(()=>{
+    
+        Counter()
+    },[modifyQuantity])
+    
  //funcion para vaciar lista carrito 
      const RemoveAll=()=>{
          
          setCartList([])
          setCount(0)
      }   
-     //calcula el totalprice para CartPage, devuelve estado que se muestra en cartpage. esta funcion es llamada desde onclick itemcount modifyQuantity(esa funcion esta en cartPage)
+     //calcula el totalprice por producto para CartPage, devuelve estado que se muestra en cartpage. esta funcion es llamada desde onclick itemcount modifyQuantity(esa funcion esta en cartPage)
      const TotalPrice=(product)=>{
          cartList.map((item)=>{
              if(product.id==item.id){
@@ -94,8 +108,18 @@ const Context=({children})=>{
 
      }
 
+     const SumPrice=()=>{
+         let sum=0
+         let totalForProduct=0
+         cartList.map((product)=>{
+             totalForProduct=product.quantity*product.price
+             sum=sum+totalForProduct
+         })
+         setFinalPrice( sum)
+     }
+
     console.log(cartList, "lista oka")
-    const dataContext={cartList,addProduct,deleteProduct,RemoveAll,TotalPrice,price,checkForTotalPrice,count}
+    const dataContext={cartList,addProduct,deleteProduct,RemoveAll,TotalPrice,price,checkForTotalPrice,count, finalPrice, SumPrice,modifyQuantity}
 
     return(
         <div>

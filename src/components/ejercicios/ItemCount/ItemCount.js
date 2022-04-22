@@ -24,9 +24,10 @@ const ItemCount=(props)=>{
     return(
         <div className="cont-contador">
         <div className="contador">
-            <button onClick={restar}>-</button>
-            <button onClick={sumar}>+</button>
+            <button className="boton-operacion" onClick={restar}>-</button>
             <p>{count}</p>
+            <button className="boton-operacion"onClick={sumar}>+</button>
+            
             <button id="boton-funcion" onClick={()=>props.onAdd(count,props.product)}>{props.msg}</button>
         </div>
         </div>

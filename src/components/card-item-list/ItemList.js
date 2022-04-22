@@ -35,7 +35,7 @@ const ItemList=()=>{
      //4.then()
 
     const getData= async ()=>{
-        alert("ok")
+        
         const items=collection(db,"listProducts")
         const productsSnapshot=await getDocs(items)//devuelve array de objetos
        // console.log(productsSnapshot, "snapsho")}

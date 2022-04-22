@@ -13,7 +13,7 @@ import CategoryProduct from './components/Page/CategoryProducts';
 import {Home} from "./components/Page/Home"
 import {Context} from "./Context/CartContext"
 import {CartPage} from "./components/Page/CartPage"
-
+import TransactionPage from './components/Page/TransactionPage';
 
 
 function App() {
@@ -34,6 +34,7 @@ function App() {
           <Route path="/nosotros" element={<p>Hola</p>}/>
           <Route path="/contacto" element={<p>Hola</p>}/>
           <Route path="/cart" element={<CartPage/>}/>
+          <Route path="/comprar" element={<TransactionPage/>}/>
 
 
         </Routes>

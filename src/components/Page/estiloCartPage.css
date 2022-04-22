@@ -17,8 +17,15 @@
     height: 150px;
     object-fit: cover;
 }
+.div-cart{
+   border-top: 1px solid blue;
+    
+}
 
 
+h2{
+    color: white;
+}
 td{
     padding: 50px;
     font-weight: 600;
@@ -28,34 +35,43 @@ td{
  
     background-color: white;
     font-weight: 600;
+    margin-right: 20px;
+    opacity: 0.7;
+   
 }
+
+#button-empty-cart:hover{
+ 
+    opacity: 1;
+   
+}
+
 
 #boton-terminar-compra{
     background-color: white;
     font-weight: 600;
-}
-
-
-.contador button{
-    /*display: inline-block;*/
-    color: black;
-    background-color: white;
-    font-weight: 600;
-    border-radius: 10px;
     opacity: 0.7;
-    width: fit-content;
-   
-    
 }
+
+#boton-terminar-compra:hover{
+   opacity: 1;
+}
+
+
 
 #button-delete{
     background-color: white;
     font-weight: 600;
+    opacity: 0.7;
+}
 
+#button-delete{
+    opacity: 1;
 }
 #boton-carrito-vacio{
     background-color: white;
     font-weight: 600;
+    
 }
 
 /*------------------tabla---------------*/
@@ -70,11 +86,7 @@ td{
     
 }
 
-.div-head{
-    height: 500px;
-    border-bottom: 1px solid blue;
 
-}
 .table-cart tr:first-child{
     height: 100px;
     
@@ -91,7 +103,7 @@ tr td:nth-child(3){
 }
 tr td:nth-child(4){
     width: 16%;
-    background-color: red;
+/*    background-color: red;*/
     
 }
 
