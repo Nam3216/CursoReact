@@ -1,0 +1,56 @@
+.home{
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    min-height: 700px;
+}
+
+.carousel-container{
+    margin: 0px auto;
+    height: fit-content;
+    width: 1000px;
+    background-color: white;
+}
+/*
+.carousel-container img{
+    object-fit: cover;
+   
+  
+}*/
+.carousel-image{
+    object-fit: cover;
+    width: 1000px;
+    height: 600px;
+}
+
+.text-carousel{
+    background-color: transparent;
+}
+.text-carousel h3{
+    background-color: transparent;
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.carousel-indicators{ /*los botones de abajo del carousel*/
+    background-color: transparent;
+}
+
+@media screen and (max-width: 500px) {/*para carousel celular*/
+
+    .carousel-container{
+        margin: 0px auto;
+        height: fit-content;
+        width: 400px;
+        height: fit-content;
+        background-color: white;
+    }
+
+    .carousel-image{
+        object-fit: cover;
+        width: 500px;
+        height: 400px;
+    }
+
+    }

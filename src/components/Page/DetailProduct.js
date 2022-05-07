@@ -1,25 +1,18 @@
 import React,{useState,useEffect} from "react";
-import {ProductsMock} from "../MockList/ProductsMock"
 import { useParams } from "react-router-dom";
-//import "./estiloItemDetail.css"
 import ItemDetail from "../ItemDetailContainer/ItemDetail";
 import { collection,getDocs } from "firebase/firestore";
 import db from "../../firebase";
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const DetailProduct=()=>{
     
     const[products,setProducts]=useState([])
     const[objectProduct,setObjectProduct]=useState({})
-    const{id}=useParams()//podria usar directo useParams().id
+    const{id}=useParams()
 
-    //obtengo lista mock para usarla local
-/* no uso mas, uso el de firebase
-    const GetList=()=>{
-        return new Promise((resolve,reject)=>{
-            return resolve(ProductsMock())
-        })
-    }*/
 
+//obtengo productos desde firebase
     const GetList=async ()=>{
         const items=collection(db,"listProducts")
         const productsSnapshot=await getDocs(items)
@@ -29,7 +22,7 @@ const DetailProduct=()=>{
             return product
         })
 
-        productsList.map((product)=>{ //obtengo producto por id que pidio usuario
+        productsList.map((product)=>{ //obtengo producto por id que pidio usuario, lo guardo en state objectProduct
             if(product.id==id){
                 setObjectProduct(product)
             }
@@ -41,21 +34,15 @@ const DetailProduct=()=>{
         GetList()
     },[])
 
-    //funcion GetProduct, para iterar lista y encontrar product que coincida con id elegido por usuari
-
-   /* const GetProduct=(products)=>{ no uso mas, todo en getList
-       
-        products.map((product)=>{
-            if(product.id==parseInt(id)){
-                setObjectProduct(product)
-                
-            }
-        })
-    }*/
-
+//paso el product a ITemDetail, es el componente que despliega el producto
     return(
         <div>
-            <ItemDetail data={objectProduct} key={objectProduct.key}/>
+            <SectionTitle title={objectProduct.product}/>
+       
+            <div className="item-detail-container">
+                
+                <ItemDetail data={objectProduct} key={objectProduct.key}/>
+            </div>
         </div>
        
     )

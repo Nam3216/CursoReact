@@ -1,11 +1,12 @@
 import React,{useState,useEffect} from "react";
 import "./EstiloItem.css"
+import Button from 'react-bootstrap/Button';
 
 //import { DetailProduct } from "../events/detailProduct";//entre{} tengo q traer nombre archivo y funcion para q funcione
 import {Link} from "react-router-dom"
 
 const Item=({data})=>{
-    const{product,size,price,brand,id,img,category}=data //desestructuracion
+    const{product,size,price,brand,id,img,category,offer}=data //desestructuracion
   
   /*  const onAdd=(count)=>{
     if(count<10){
@@ -28,8 +29,8 @@ const Item=({data})=>{
                 <p>{product} talle: {size}</p>
                 <p>Marca: {brand}</p>
                 <p>$ {price}</p>
-               <Link to={`/productos/${id}`}> <button > Ver Detalle </button></Link>
-                <Link to={`/productos/categoria/${category}`}><button > Ver Categoria</button> </Link>
+               <Link to={`/productos/${id}`}> <Button > Ver Detalle </Button></Link>
+                <Link to={`/productos/categoria/${category}`}><Button >Categoria</Button> </Link>
                 
             </div>
 

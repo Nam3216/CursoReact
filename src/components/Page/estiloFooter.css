@@ -1,0 +1,16 @@
+.footer img{
+    object-fit: cover;
+    padding: 5px;
+   
+}
+
+.footer{
+    background-color: grey;
+    height: 100px;
+    font-weight: 600;
+    
+  }
+
+.footer-right{
+    margin-top: 10px;
+}

@@ -73,13 +73,13 @@ const Context=({children})=>{
     }
 //modificarCantidad, es el onClick de ITemCount en CartPahge. se activa cuando usuario modifica cantidad de producto en el carrito
     const modifyQuantity=(quantity,product)=>{
-        console.log(quantity,product,"modify")
+        /*console.log(quantity,product,"modify")*/
         cartList.map((item)=>{
             if(item.id==product.id){
                 item.quantity=quantity
             }
         })
-        TotalPrice(product)
+        TotalPrice(product)//llama automaticamente a funcion totalPrice que actualice el precio total de ese producto, y lo guarda en state Price. ese State despues lo muestro en CartPag
     
     }
 
@@ -107,7 +107,7 @@ const Context=({children})=>{
          })
 
      }
-
+//para calcular el precio final de todos los productos del carrito
      const SumPrice=()=>{
          let sum=0
          let totalForProduct=0

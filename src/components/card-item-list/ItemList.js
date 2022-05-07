@@ -4,6 +4,7 @@ import {ProductsMock} from "../MockList/ProductsMock"//al definir asi, primero e
 import { ClassNames } from "@emotion/react"
 import{collection, getDocs} from "firebase/firestore"
 import db from "../../firebase"
+import Spinner from 'react-bootstrap/Spinner'
 
 const ItemList=()=>{
     
@@ -61,14 +62,14 @@ const ItemList=()=>{
         },[])
     
 
-   
+   //<p>Cargando</p>
  
     //iteracion map. le paso cada objeto como prop a componente Item <Item data={product} key={product.id}/>
     return(
 
         <div className="item-list">
             { loading?(
-                <p>Cargando</p>
+                <Spinner animation="border" variant="primary" className="spinner"/>
             ):(
             
             listProducts.map((product)=>{

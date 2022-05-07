@@ -2,17 +2,59 @@
   box-sizing: border-box;
   margin: 0;
   font-size: 14px;
-  background-color:  black;
-  
+ /* background-color:  black; /*todo negro, app logo sticky media 80, y navbar sticky 20 sin fondo negro*/
  
 }
 
+/*@import-normalize*/
 
-header{
-  width: 100%;
+
+
+
+.container{
+  margin: 0px auto;
+  
   
 }
 
+
+
+
+/*-------sticky, para version celular no cambia, mismo diseño que nav normal. ya navbar bootstrap tiene su diseño------*/
+#navbar-sticky{
+  height: 100px;
+  text-align: center;
+  background-color: black;
+  
+}
+
+#navbar-sticky a{/*aunque esten en p, saca el estilo en a*/
+  text-decoration: none;
+  list-style: none;
+  font-weight: 600;
+  margin-top: 20px;
+ 
+     
+}
+#navbar-sticky p{
+  font-size: 16px;
+  margin-left: 30px;
+   
+
+}
+#navbar-sticky p:hover{/*aunque esten en p, saca el estilo en a*/
+   color:  lightblue;
+   
+}
+
+.App-logo-sticky {/*lo de la web*/
+  height: 80px;
+  pointer-events: none;
+  float: left;
+   
+}
+
+/*----------navbarb-----------------------------------------------*/
 
 .App-header{/*para que se vea a lo largo el navbar*/
   width: inherit;
@@ -25,39 +67,28 @@ p{
 }
 .App {
   text-align: center;
+  
 }
 
+
+/*----logo de la web for you-----*/
 .App-logo {
   height: 80px;
   pointer-events: none;
   float: left;
-  
+   
 }
 
-.App-logo img{
-  height: 50px;
-  width: 50px;
-}
-
-.App-link {
-  color: #61dafb;
- display: inline-block;
-  margin-top: 150px;
-
-  
-}
-
-/*----------navbarb-----*/
 
 #navbar-b{
  
-  height: 120px;
+  height: 100px;
   text-align: center;
-  position: sticky  ;
   
-  
-    
 }
+
+
+
 .me-auto{
   margin-left: 5%;
 }
@@ -70,6 +101,7 @@ p{
   text-decoration: none;
   list-style: none;
   font-weight: 600;
+  margin-top: 20px;
   
   
 }
@@ -82,18 +114,20 @@ p{
 
 }
 #navbar-b p:hover{/*aunque esten en p, saca el estilo en a*/
-   color: aqua;
-  
- 
-  
+   color: lightblue;
+   
 }
 .contenedor-logo{
-  margin-right: 100px;
+  margin-right: 50px;
+
 }   
 
 .dropdown{
   text-align: center;
+  
+  
  }
+
 .dropdown p{
   color: black;
   background-color: white;
@@ -101,7 +135,14 @@ p{
   width: 50px;
   
   
-  
+}
+
+#basic-nav-dropdown {
+  color: white;
+}
+
+#basic-nav-dropdown:hover {
+  color:  lightblue;
 }
 
 .dropdown p:hover{
@@ -112,48 +153,107 @@ p{
 
 
 
-/*-----------------------------navegador*/
-/*li,a{
-  text-decoration: none;
-  list-style: none;
-  color: white;
-  font-weight: 600;
- 
- 
+
+/*-----main celular------------------*/
+
+main{
+  display: flex;/*content:flex*/
+  flex-direction: column;
+  text-align: center;
 }
 
 
-.navegador-ul{
-  display: flex;
- align-items: flex-end;
- height: 80px;  
- 
- 
- 
-}
 
-li{
-  margin-left: 20px;
+
+/*----------------grid escritorio-------*/
+@media screen and (min-width: 1000px) {
+
+
+  .root {
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 80px;
+    grid-template-columns: repeat(4fr)  ;
+  }
+
+  header {
+    grid-row: 1/2;
+    grid-column: 1/5;
+    
+   
+  }
+
+  main {
+    grid-row: 2/4;
+    grid-column: 1/5;
+   
+  }
+
+  .footer{
+    grid-row: 4/5;
+    grid-column: 1/5;
+   
+  }
+
+
+  /*----logo en navbar sticky en escritorio cambia.---*/
+
+  .App-logo-sticky {/*lo de la web*/
+    height: 50px;
+    pointer-events: none;
+    float: left;
+   margin-top: 40px;
+    
+  }
+
+  
+/*-------sticky------*/
+
+#navbar-sticky{
+  height: 60px;/*antes 20 con todo negro*/
+  text-align: center;
+  /*position: fixed  ;*/
+  top: 0;
+  border-radius: 30px;
+  
   
 }
 
-.navegador-ul a:hover{
-  color: aqua;
+#navbar-sticky a{/*aunque esten en p, saca el estilo en a*/
+  text-decoration: none;
+  list-style: none;
+  font-weight: 600;
+  margin-top: 50px;
+  
+     
 }
-/*contenedor de todo el nav*/
-/*
-header{ 
-  display: flex;
-  justify-content: center;
-  height: 150px;
-}*/
-/*
-.contenedor-logo{
-  margin-right: 100px;
+#navbar-sticky p{
+  font-size: 16px;
+  margin-left: 30px;
+  
+  
+
+}
+#navbar-sticky p:hover{/*aunque esten en p, saca el estilo en a*/
+   color:  lightblue;
+   
 }
 
-/*
-.botones a{
-  color: black;
-}*/
+.App-logo-sticky {/*lo de la web*/
+  height: 40px;
+  pointer-events: none;
+  float: left;
+  margin-bottom: 20px;
+   
+}
+}
+
+
+@media screen and (max-width: 600px) {
+  *{
+    background-color: inherit;/*para q se vea bien menu desplegable celu*/
+     
+    }
+
+  }
+
 

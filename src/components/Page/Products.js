@@ -1,13 +1,14 @@
 import React from "react";
 import ItemList from "../card-item-list/ItemList";
-import ItemListContainer from "../card-item-list/itemListContainer";
-import ItemDetailContainer from "../ItemDetailContainer/ItemDetailContainer";
+import SectionTitle from "../SectionTitle/SectionTitle";
+
 
 const Products=()=>{
-
+//componente para todos los productos, contiene al itemList. ItemList obtiene los prod de firebase y los despliega a traves de Item
     return (
-            <div>
-                <ItemListContainer/>
+            <div className="todos-los-productos">
+                <SectionTitle title={"Todos Los Productos"} />
+                <ItemList/>
                
             </div>)
 }

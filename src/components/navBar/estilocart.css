@@ -1,17 +1,43 @@
 .cart-widget{
-    /*display: flex;*/
+    
     height: 100px;
     width: 100px;
-   
+    text-align: center;
     
-    
-    
+        
+}
+
+.cart-widget p{
+    display: inline-block;
     
 }
 
-.cart-widget img{
+.icon{
     
-    height: 100px;
-    width: 100px;
+   margin-top: 40px;
+   text-align: center;
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .cart-widget{
     
+        height: 100px;
+        width: 100px;
+        margin-top: 80px;  
+            
+    }
+
+    .cart-widget p{
+        display: inline-block;
+        
+    }
+
+    .icon{
+        margin-top: 0;
+    }
+    
+
 }

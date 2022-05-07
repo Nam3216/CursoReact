@@ -3,6 +3,7 @@ import {ProductsMock} from "../MockList/ProductsMock"
 import {useParams} from "react-router-dom"
 import "./estiloItemCategory.css"
 import {Link} from "react-router-dom"
+import Button from 'react-bootstrap/Button'
 
 const ItemCategory=({data})=>{
     //muestra los productos segun categoria que se lo pasa CategoryProducts
@@ -13,11 +14,11 @@ const ItemCategory=({data})=>{
         <div className="item-category"> 
             
                     <div className="item-list-item-category" key={id}>
-                        <img src={img} alt="Imagen cargando"/>
+                        <Link to={`/productos/${id}`}> <img src={img} alt="Imagen cargando"/></Link>
                         <p>{product} talle: {size}</p>
                         <p>Marca: {brand}</p>
                         <p>$ {price}</p>
-                       <Link to={`/productos/${id}`}> <button>Ver Detalle </button></Link>
+                       <Link to={`/productos/${id}`}> <Button>Ver Detalle </Button></Link>
                         </div>
              
         </div>

@@ -1,0 +1,18 @@
+.us{
+    background-color: white;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 30px;
+    height: 700px;
+}
+
+.us-container{
+   /* text-align: center;*/
+}
+
+.us h4{
+  
+    padding: 20px;
+    border-radius: 30px;
+    
+}

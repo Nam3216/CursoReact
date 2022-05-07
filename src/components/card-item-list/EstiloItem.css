@@ -1,8 +1,19 @@
+
 .item-list{
     text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 700px;
+   
   
 }
 
+.spinner{
+    padding: 30px;
+    margin-top: 200px;
+    background-color: white;
+}
 a   {
   text-decoration: none;
   list-style: none;
@@ -20,8 +31,10 @@ a   {
     height: fit-content;
    
 
-}
-
+}/*
+.container-item-list-item{
+    margin: 0px auto;
+}*/
 
 .item-list-item{
   
@@ -29,12 +42,24 @@ a   {
    
     height: fit-content;
     display: inline-block;
-    margin: 0px auto;
+   
     margin-bottom: 50px;
     text-align: center;
     border: 1px solid white;
-    margin-right: 30px;
+   margin-left: 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(29, 28, 28);/*antes sin background*/
+   
+   
+   
   
+}
+
+.item-list-item:hover{
+    background-color: rgb(63, 60, 60);
+    
 }
 
 .item-list-item p{
@@ -45,12 +70,13 @@ a   {
 }
 
 .item-list-item img{
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
     opacity: 0.7;
    
-    border: 1px solid white;
+    border: 1px solid black;
+    border-radius: 30px;
 }
 
 .item-list-item img:hover{
@@ -62,10 +88,12 @@ a   {
 }
 .item-list-item button{
     border-radius: 10px;
-    background-color: white;
+    background-color: rgb(139, 189, 206);
     color: black;
     font-weight: 600;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
     
 }
 
@@ -73,3 +101,4 @@ a   {
    
     opacity: 1;
 }
+

@@ -1,0 +1,36 @@
+
+
+.contacto-container{
+    text-align: center;
+   
+}
+.contact-container input{
+    margin: 0px auto;
+    margin-bottom: 20px;
+    display: block;
+    width: 500px;
+    background-color: rgb(228, 215, 199);
+    
+}
+
+.contact-container form{
+    background-color: white;
+}
+
+form{
+    height: 700px;
+    border-radius: 30px;
+}
+
+label, h4{
+    margin-top: 10px;
+    background-color: white;
+}
+
+#text-area{
+    height: 200px;
+    width: 500px;
+    margin-bottom: 30px;
+    background-color: rgb(228, 215, 199);
+    border: 2px solid black;
+    }

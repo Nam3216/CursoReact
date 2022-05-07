@@ -31,57 +31,77 @@ td{
     font-weight: 600;
 }
 
-#button-empty-cart{
- 
-    background-color: white;
-    font-weight: 600;
+.button-cart{
     margin-right: 20px;
-    opacity: 0.7;
+}
+/* ---------------si no hay nada en carrito------------*/
+.container-cart{
    
-}
-
-#button-empty-cart:hover{
- 
-    opacity: 1;
-   
-}
-
-
-#boton-terminar-compra{
     background-color: white;
-    font-weight: 600;
-    opacity: 0.7;
-}
-
-#boton-terminar-compra:hover{
-   opacity: 1;
-}
-
-
-
-#button-delete{
-    background-color: white;
-    font-weight: 600;
-    opacity: 0.7;
-}
-
-#button-delete{
-    opacity: 1;
-}
-#boton-carrito-vacio{
-    background-color: white;
-    font-weight: 600;
+    min-height: 700px;
+    border-radius: 30px;
     
 }
 
-/*------------------tabla---------------*/
-.container-cart{
-    text-align: center;
+.loader{
+    background-color: white;
+    min-height: 650px;
+    border-radius: 30px;
 }
 
+.loader h4{
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    padding: 100px;
+}
+
+
+
+/*------------------tabla---------------*/
+.container-cart-container{
+  
+    background-color: inherit;
+    text-align: center;
+    border-radius: 30px;
+    
+}
+/*centro la tabla en escritorio*/
+.table-cart{
+   
+    margin: 0px auto;
+    
+}
+
+#id-table{
+    background-color: white ;
+    border-radius: 30px;
+}
+
+/*para que se le ponga el background a tabla*/
+.table-cart tr,.table-cart td{
+    background-color: white;
+    border-radius: 30px;
+}
+
+
+.div-head td p{
+    background-color: white;
+    color: black;
+}
+
+.div-head td p{
+    background-color: white;
+    color: black;
+}
+
+.div-cart td{
+    color: black; 
+}
 .table-cart tr{/*improtante esto para tablas, y dividir el width en cada td hasta llegar a 100%*/
     display: flex;
     justify-content: space-between;
+    
     
     
 }
@@ -121,10 +141,32 @@ tr td{
    
 }
 
+@media screen and (max-width: 1000px) {
+
+    table {
+        width:100%;
+        background-color: black;
+    }
+
+   /* .table-cart tr,*/.table-cart td{
+        display: block;
+    }
+
+    .table-cart tr{
+        display: inline-block;
+    }
+
+    .table-cart tr:first-child{
+        height: 0;
+        /*margin-bottom: 810px;*/
+      
+        
+    }
+
+   
 
 
-
-
+}
 
 
 

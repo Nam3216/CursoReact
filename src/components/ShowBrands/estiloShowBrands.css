@@ -1,0 +1,22 @@
+.brands-container{
+    display: inline-block;
+    text-align: center;
+}
+
+.brand{
+    margin: 0px auto;
+    display: inline-block;
+    padding: 20px;
+}
+
+.brand img{
+    
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+   
+}
+
+.brand p{
+    color: black;
+}

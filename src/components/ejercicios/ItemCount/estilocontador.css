@@ -1,15 +1,22 @@
-.cont-contador{
-    
-    /*margin-right: 110px;*/
-    
-}
+/*.cont-contador{
+   
+    text-align: center;
+    background-color: inherit;
+}*/
 
-
+/*
 .contador{
-    height:fit-content;
-    width: fit-content;
+   height:fit-content;
+    width: inherit;
+    background-color: white;
+    text-align: center;
+  
+        
     
   
+}
+.p-count{
+    background-color: white;
 }
 .contador p{
     display: inline-block;
@@ -17,39 +24,114 @@
     width: 5px;
   
 }
-
-
-.boton-operacion{
-    
-    background-color: white;
-    color: black;
-    opacity: 0.7;
-    height: fit-content;
-    width: 25px;
-    font-size: 16px;
-    margin-right: 5px;
-    margin-left: 8px;
-}
-.boton-operacion:hover{
-    
-    opacity: 1;
-}
-
-#boton-funcion{
-    width: fit-content;
-    margin-left: 10px;
-    display: inline-block;
-    background-color: white;
+.buttons{
     font-weight: 600;
-    opacity: 0.7;
-    width: 80px;
-    margin-right: 10px;
-    width: fit-content;
+    border: 1px solid rgb(1, 1, 189);
+
 }
 
-#boton-funcion:hover{
+#resta{
+    width: 50px;
+    
    
-    opacity: 1;
+}
+
+#suma{
+    width: 50px;
+   
+    
 }
 
 
+
+#agregar{
+    width: 160px;
+    display: block;
+    margin-right: 20px;
+}*/
+.item-count-container{
+    background-color: white;
+}
+.contador-container{
+    background-color: inherit;
+   
+}
+
+#add{
+    display: block;
+    width: 185px;
+    margin-left: 68px;
+    
+    
+}
+
+.p-count{
+    background-color: white;
+}
+
+.buttons-comprar a{
+    background-color: inherit;
+    color:black;
+
+}
+
+.buttons-comprar a:hover{
+    background-color: rgb(35, 111, 136);
+    color:black;
+
+}
+.buttons-comprar:hover{
+    background-color: rgb(35, 111, 136);
+
+
+}
+
+/*---------------contador en cart-----------------*/
+.buttons-add-cart{
+    width: 50px;
+   margin-right: 50px;
+    background-color: inherit;
+    margin-top: 10px;
+}
+
+
+
+.buttons-sum-minus-cart{
+    /*display: inline-block;*/
+}
+
+#add-cart{
+    display: block;
+    width: 90px;
+    
+}
+.contador-container-cart{
+    background-color: white;
+}
+
+.p-count p{
+    background-color:white;
+    color: black;
+}
+
+@media screen and (min-width: 1000px) {
+    
+
+
+#add{
+    display: block;
+    width: 185px;
+    margin-left: 40px;
+    
+}
+
+#resta{
+    margin-left: 40px;
+}
+
+#add-buy{
+  
+    margin-left: 40px;
+
+}
+}
