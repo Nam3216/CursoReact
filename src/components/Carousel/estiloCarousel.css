@@ -10,17 +10,21 @@
     height: fit-content;
     width: 1000px;
     background-color: white;
+    text-align: center  ;
+    /*margin-left: 100px;*/
 }
-/*
-.carousel-container img{
-    object-fit: cover;
+
+.carousel-element{
+    margin: 0px auto;
+   
    
   
-}*/
+}
 .carousel-image{
     object-fit: cover;
     width: 1000px;
     height: 600px;
+    
 }
 
 .text-carousel{
@@ -38,19 +42,24 @@
 }
 
 @media screen and (max-width: 500px) {/*para carousel celular*/
-
+ 
     .carousel-container{
-        margin: 0px auto;
+       /* margin: 0px auto;*/
         height: fit-content;
         width: 400px;
-        height: fit-content;
+      
         background-color: white;
+        margin-left: 0;
+        
     }
 
     .carousel-image{
         object-fit: cover;
         width: 500px;
-        height: 400px;
+        height: 350px;
+       
+       
+
     }
 
     }

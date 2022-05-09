@@ -8,7 +8,7 @@ const CarouselJs=()=>{
     return(
         <div className="carousel-container" style={{ display: 'block'   }}>
       
-      <Carousel >
+      <Carousel id="carousel-element" >
         <Carousel.Item interval={2000}>
           <img
             

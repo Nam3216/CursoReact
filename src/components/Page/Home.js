@@ -5,6 +5,7 @@ import db from "../../firebase"
 import { collection,getDocs } from "firebase/firestore"
 import Item from "../card-item-list/Item"
 import ShowBrands from "../ShowBrands/ShowBrands"
+//import "./estiloHome.css"
 
 
 export const Home=()=>{

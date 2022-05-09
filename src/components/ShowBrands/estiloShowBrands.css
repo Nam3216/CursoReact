@@ -7,6 +7,7 @@
     margin: 0px auto;
     display: inline-block;
     padding: 20px;
+    width: fit-content;
 }
 
 .brand img{
@@ -20,3 +21,19 @@
 .brand p{
     color: black;
 }
+
+@media screen and (max-width: 500px) {/*para carousel celular*/
+ 
+    .brand img{
+    
+        height: 350px;
+        width: 350px;
+        object-fit: cover;
+       
+    }
+
+    .brand{
+        padding: 0;
+    }
+
+    }
