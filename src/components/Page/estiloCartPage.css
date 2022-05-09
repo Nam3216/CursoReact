@@ -56,8 +56,13 @@ td{
     padding: 100px;
 }
 
-
-
+#final-price p{
+    color: black;
+}
+.final-price-respon{
+    background-color: black;
+    margin-top: 10px;
+}
 /*------------------tabla---------------*/
 .container-cart-container{
   
@@ -182,7 +187,7 @@ tr td{
 }
 
 #add-cart{
-    margin-left: 130px;
+    margin-left: 160px;
 }
 
 }

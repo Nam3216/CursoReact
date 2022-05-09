@@ -1,54 +1,4 @@
-/*.cont-contador{
-   
-    text-align: center;
-    background-color: inherit;
-}*/
 
-/*
-.contador{
-   height:fit-content;
-    width: inherit;
-    background-color: white;
-    text-align: center;
-  
-        
-    
-  
-}
-.p-count{
-    background-color: white;
-}
-.contador p{
-    display: inline-block;
-    margin: 0px auto;
-    width: 5px;
-  
-}
-.buttons{
-    font-weight: 600;
-    border: 1px solid rgb(1, 1, 189);
-
-}
-
-#resta{
-    width: 50px;
-    
-   
-}
-
-#suma{
-    width: 50px;
-   
-    
-}
-
-
-
-#agregar{
-    width: 160px;
-    display: block;
-    margin-right: 20px;
-}*/
 .item-count-container{
     background-color: white;
 }
@@ -103,6 +53,7 @@
 #add-cart{
     display: block;
     width: 90px;
+    margin-left:     5px;
     
 }
 .contador-container-cart{

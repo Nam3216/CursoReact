@@ -23,7 +23,7 @@ const ShowBrands=()=>{
                 return(
                     <div className="brand">
                         <img src={product.img} alt="cargando"/>
-                        <p>{product.brand}</p>
+                        <h4>{product.brand}</h4>
 
                      </div>   
                 )

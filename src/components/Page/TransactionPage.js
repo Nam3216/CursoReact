@@ -4,6 +4,8 @@ import { collection,addDocs, addDoc } from "firebase/firestore"
 import CartContext from "../../Context/CartContext"
 import { useContext } from "react"
 import "./estiloTransactionPage.css"
+import Button from 'react-bootstrap/Button';
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 const TransactionPage=()=>{
     const{cartList,finalPrice}=useContext(CartContext)
@@ -41,16 +43,17 @@ const TransactionPage=()=>{
     }
     
     return (
-        <div>
-            <h3>Formulario de Compra</h3>
+        <div className="compra">
+            <SectionTitle title={"Formulario de Compra"}/>
+            
             <form className="form-compra" onSubmit={SendData}>
-                <label for="name"></label>
+                <label for="name"><h4>Escriba su nombre</h4></label>
                 <input type="text" placeholder="Escriba su nombre" name="name" onChange={handleInput} className="form-compra-input" />
-                <label for="phone"></label>
+                <label for="phone"><h4>Escriba su telefono</h4></label>
                 <input type="text" placeholder="Escriba su telefono" name="phone" onChange={handleInput}className="form-compra-input" />
-                <label for="email"></label>
+                <label for="email"><h4>Escriba su email</h4></label>
                 <input type="text" placeholder="Escriba su email" name="email" onChange={handleInput}className="form-compra-input" />
-                <button type="submit">Enviar datos</button>
+                <Button type="submit">Enviar datos</Button>
 
             </form>
         </div>

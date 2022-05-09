@@ -76,12 +76,12 @@ return(
                             <tr className="div-cart">
                                 <td><img src={product.img} alt="cargando"/></td>
                                 <td>{product.product} {product.brand} </td>
-                                <td> {product.price}</td>
+                                <td> ${product.price}</td>
                             
                                 <td >  <ItemCount stock={10} initial={product.quantity} onAdd={modifyQuantity} product={product} msg={"Modifica"}/></td>
                                 {/*si State checkForTotalPrice es true, muestra el precio por cantidad del producto como lo cargo de la lista carrito*. Si es false lo muestra con price, que es el state que guarda el nuevo precio luego que se haga un cambio de cantidad*/}
                                 <td>{checkForTotalPrice ?(
-                                    product.quantity*product.price
+                                    `Precio total $${product.quantity*product.price}`
                                 ):(  
                                     price
                                 ) } </td>
@@ -97,7 +97,7 @@ return(
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>Precio final: ${finalPrice} </td>
+                        <td id="final-price"><p>Precio final: ${finalPrice} </p></td>
                         <td></td>
                     </tr>
                 </table>
@@ -134,6 +134,7 @@ return(
                      </div>
              )
          })}
+         <div className="final-price-respon"><p>Precio final: ${finalPrice} </p></div>
 
         </div>): (
              <div className="loader">
