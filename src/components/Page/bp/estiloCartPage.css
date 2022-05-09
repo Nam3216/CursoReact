@@ -142,7 +142,7 @@ tr td{
 }
 
 @media screen and (max-width: 1000px) {
-/* este css era para tabla responsive
+/*
   .container-cart-container{
       width: 100%;
       margin-bottom: 15px;
@@ -164,25 +164,12 @@ tr td{
   }
 */
 
-/*css para jsx de cart responsive*/
-.product-small-screen{
-    margin: 0p auto;
-    text-align: center;
-}
-.product-screen-small img{
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-
-
+.div-head td{
+    display: inline-block;
 }
 
-.small-counter{
-    text-align: center;
-}
-
-#add-cart{
-    margin-left: 130px;
+.div-cart td{
+    display: inline-block;
 }
 
 }

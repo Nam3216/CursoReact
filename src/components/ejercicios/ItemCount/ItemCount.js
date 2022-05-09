@@ -20,11 +20,7 @@ const ItemCount=(props)=>{
         }
     }
 //importante es definir una funcion flecha si agarro por props una funcion de otro componente, y a la vez quiero pasar parametro.´+
-/* <button className="boton-operacion" onClick={restar}>-</button>
-            <p>{count}</p>
-            <button className="boton-operacion"onClick={sumar}>+</button>
-            
-            <button id="boton-funcion" onClick={()=>props.onAdd(count,props.product)}>{props.msg}</button>*/
+
 
 //uso en item detail y en cartPage. es importante la props.product que recibe, con eso en cartPage la funcion obtiene el producto y cambia la cantidad en el indicado
 //modifico clase de item count, segun se lo llame desde item detail o cartpage

@@ -25,32 +25,25 @@ useEffect(()=>{
     SumPrice()
 },[modifyQuantity])
 
+//para saber tamaño de pantalla y mostrar el jsx correcto, funciona, pero si esta ya en celular no capta q es menos de 1000, solo cdo cambio desde navegador
 
-//use effect cuando carga componente verifica tamño screen. >=1000 muestra tabla. menor muestra jsx abajo de todo, sin tabla
 useEffect(()=>{
   
     if(window.screen.width>=1000){
-        
-        setSizeScreen(true)
-    }
-    if(window.screen.width<1000){
-       
-        setSizeScreen(false)
+        alert("ok")
     }
 },[])
 
 //si cartList tiene elementos, los muestra, sino no
-
+// {cartList.length>0 && sizeScreen ? (
 return(
    
     <div className="container-section">
          
         <SectionTitle title="Carrito de Compras"/>
-        {/*condicional, sizeScreen true, pantalla gde muestra tabla, sino muestra otro jsx*/}
-        {sizeScreen ?(
         
         <div className="container-cart">
-           
+            
             {cartList.length>0  ? (
                
 
@@ -109,40 +102,8 @@ return(
                     <h4>El carrito esta vacio. ¡Llenalo con algo para comprar!</h4>
                     <Button onClick={()=>navigate("/productos") }id="boton-carrito-vacio">Ir a Productos</Button>
                 </div>)} 
-               
-        </div> 
-      ):(
-         
-     <div>
-         {cartList.length>0 ? (
-             <div>
-         {cartList.map((product)=>{
-             return(
-                 <div className="product-screen-small" key={product.id}>
-                     <img src={product.img} alt="cargando"/>
-                     <p>{product.title} </p>
-                     <div> Precio Unitario ${product.price} </div>
-                     <div className="small-counter">
-                     <ItemCount initial={product.quantity} msg={"Modifica"} onAdd={modifyQuantity} product={product} stock={10} />
-                     </div>
-                     <div>{checkForTotalPrice ?(
-                                    product.quantity*product.price
-                                ):(  
-                                    price
-                                ) } </div>
-                     <Button id="button-delete"onClick={()=>deleteProduct(product)}>Eliminar producto </Button>
-                     </div>
-             )
-         })}
 
-        </div>): (
-             <div className="loader">
-                <h4>El carrito esta vacio. ¡Llenalo con algo para comprar!</h4>
-                <Button onClick={()=>navigate("/productos") }id="boton-carrito-vacio">Ir a Productos</Button>
-            </div>
-         )}
-     </div>
- )}
+        </div> 
     </div>
 )
 

@@ -3,7 +3,7 @@
     text-align: center;
     margin: 0px auto;
     border-radius: 30px;
-    height: 700px;
+    min-height: 700px;
 }
 
 .us-container{
