@@ -1,5 +1,5 @@
 import React from "react";
-import ItemList from "../card-item-list/ItemList";
+import ItemList from "../ItemList/ItemList";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 

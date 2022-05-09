@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react"
 import "./estiloItemDetail.css"
-import ItemCount from "../ejercicios/ItemCount/ItemCount"
+import ItemCount from "../ItemCount/ItemCount/ItemCount"
 import { useContext } from "react"
 import CartContext from "../../Context/CartContext"
 import Button from 'react-bootstrap/Button';

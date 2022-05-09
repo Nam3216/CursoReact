@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import {useContext, useEffect} from "react"
 import CartContext from "../../Context/CartContext"
-import ItemCount from "../ejercicios/ItemCount/ItemCount"
+import ItemCount from "../ItemCount/ItemCount/ItemCount"
 import "./estiloCartPage.css"
 //import {Navigate} from "react-router-dom"
 import{useNavigate}from "react-router-dom"

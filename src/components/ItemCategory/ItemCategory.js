@@ -1,6 +1,4 @@
-import React,{useEffect,useState} from "react";
-import {ProductsMock} from "../MockList/ProductsMock"
-import {useParams} from "react-router-dom"
+
 import "./estiloItemCategory.css"
 import {Link} from "react-router-dom"
 import Button from 'react-bootstrap/Button'
