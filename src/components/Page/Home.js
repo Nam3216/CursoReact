@@ -3,9 +3,9 @@ import CarouselJs from "../Carousel/Carousel"
 import SectionTitle from "../SectionTitle/SectionTitle"
 import db from "../../firebase"
 import { collection,getDocs } from "firebase/firestore"
-import Item from "../card-item-list/Item"
+import Item from "../ItemList/Item"
 import ShowBrands from "../ShowBrands/ShowBrands"
-//import "./estiloHome.css"
+
 
 
 export const Home=()=>{
