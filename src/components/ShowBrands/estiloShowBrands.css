@@ -12,8 +12,8 @@
 
 .brand img{
     
-    height: 450px;
-    width: 450px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
    
 }
@@ -22,13 +22,41 @@
     color: black;
 }
 
-@media screen and (max-width: 500px) {/*para carousel celular*/
+@media screen and (min-width: 1076px) {
+    .brands-container{
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .brand{
+        margin: 0px auto;
+        display: inline-block;
+        padding: 20px;
+        width: fit-content;
+    }
+    
+    .brand img{
+        
+        height: 450px;
+        width: 450px;
+        object-fit: cover;
+       
+    }
+    
+    .brand p{
+        color: black;
+    }
+    
+}
+/*
+@media screen and (max-width: 800px) {
  
     .brand img{
     
         height: 350px;
         width: 350px;
         object-fit: cover;
+        margin-left: 5vw;
        
     }
 
@@ -37,3 +65,17 @@
     }
 
     }
+
+    @media screen and (max-width: 988px){
+        .brand img{
+    
+            height: 350px;
+            width: 350px;
+            object-fit: cover;
+           
+           
+        }
+        .brands-container{
+            margin-left: 20vw;
+        }
+    }*/

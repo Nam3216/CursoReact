@@ -5,6 +5,7 @@ import db from "../../firebase"
 import { collection,getDocs } from "firebase/firestore"
 import Item from "../ItemList/Item"
 import ShowBrands from "../ShowBrands/ShowBrands"
+import "./styleHome.css"
 
 
 
@@ -27,11 +28,15 @@ export const Home=()=>{
         GetList()
        
     },[])
-    
+    // <SectionTitle title={"Las Mejores Marcas. Las Mejores Promociones."} id="title-home"/>
     return(
         <div className="home-container">
-                <SectionTitle title={"Las Mejores Marcas. Las Mejores Promociones."}/>
+            <div className="home-container-container">
+               <div className="title-home" >
+                    <h3>{"Las Mejores Marcas. Las Mejores Promociones."}</h3>
+                </div>  
             <div className="home">
+           
             <CarouselJs/>
                 
             
@@ -43,8 +48,9 @@ export const Home=()=>{
                     }
                 })}
             </div>
-            <SectionTitle title={"¡¡Las Mejores Marcas!!"}origin={"home"}/>
+            
             <ShowBrands/>
+            </div>
             </div>
         </div>
     )

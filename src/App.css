@@ -163,13 +163,15 @@ main{
 }
 
 
-
+.footer{
+  width: 100%;
+}
 
 /*----------------grid escritorio-------*/
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1076px) {
 
 
-  .root {
+  .content {
     display: grid;
     grid-template-rows: 80px 1fr 1fr 80px;
     grid-template-columns: repeat(4fr)  ;
@@ -255,5 +257,13 @@ main{
     }
 
   }
+
+  @media screen and (max-width: 900px) {
+    *{
+      background-color: inherit;/*para q se vea bien menu desplegable celu*/
+       
+      }
+  
+    }
 
 

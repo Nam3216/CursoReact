@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import "./estiloShowBrands.css"
+import SectionTitle from "../SectionTitle/SectionTitle"
 
 const ShowBrands=()=>{
     const[listBrands,setListBrands]=useState([
@@ -19,6 +20,7 @@ const ShowBrands=()=>{
         ])
     return(
         <div className="brands-container">
+            <SectionTitle title={"¡¡Las Mejores Marcas!!"}origin={"home"} id="title-marcas"/>
             {listBrands.map((product)=>{
                 return(
                     <div className="brand">

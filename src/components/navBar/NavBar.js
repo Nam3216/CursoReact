@@ -30,6 +30,7 @@ const NavBar=()=>{
         if(window.scrollY>80){
         
           setCheckNavBar(false)
+          console.log("true")
           
         }
         if(window.scrollY<80){

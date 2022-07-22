@@ -6,11 +6,18 @@
 
 .footer{
     background-color: grey;
-    height: 100px;
+    height: 130px;
     font-weight: 600;
+    width: 100vw;
     
   }
 
 .footer-right{
     margin-top: 10px;
+}
+
+@media screen and (max-width: 560px){
+    .footer{
+        width: 150%;
+    }
 }

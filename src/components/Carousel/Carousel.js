@@ -2,12 +2,14 @@ import React from "react"
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import "./estiloCarousel.css"
+import SectionTitle from "../SectionTitle/SectionTitle";
 
 const CarouselJs=()=>{
 // className="d-block w-100" style={{ width: 1000,height: 600 }}
+//   className="carousel-image"
     return(
         <div className="carousel-container" style={{ display: 'block'   }}>
-      
+     
       <Carousel id="carousel-element" >
         <Carousel.Item interval={2000}>
           <img

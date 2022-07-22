@@ -2,6 +2,7 @@
 import './App.css';
 import  {BrowserRouter,Routes,Route}from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import React,{useEffect} from "react"
 //componentes
 import NavBar from "./components/NavBar/NavBar";
 import Products from "./components/Page/Products"
@@ -18,16 +19,23 @@ import Footer from './components/Page/Footer';
 
 
 function App() {
+
+  useEffect(()=>{
+    document.title="For Yoour - Online Clothing"
+  },[])
   return (
     <div className="App">
+         <Context>
      <div className="content">
-     <Context>
+  
       <BrowserRouter>
           <NavBar />
       
        
           <main className='container' >
+         
           <Routes>
+          <Route path="/CursoReact" element={<Home/>}/>
             <Route path="/" element={<Home/>}/>
             <Route path="/productos" element={<Products/>}/>
             <Route path="/productos/categoria/:category" element={<CategoryProduct/>}/>
@@ -42,7 +50,7 @@ function App() {
           
           
           
-
+         
           </main>
        
         <footer>
@@ -53,8 +61,9 @@ function App() {
         
 
         </BrowserRouter>     
-      </Context>
+        
     </div>
+    </Context>
     </div>
      
   );
