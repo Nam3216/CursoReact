@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CursoReact/static/css/main.a046cb9b.css",
-    "main.js": "/CursoReact/static/js/main.8524c56e.js",
+    "main.css": "/CursoReact/static/css/main.3dbaf5a0.css",
+    "main.js": "/CursoReact/static/js/main.ef179bbb.js",
     "static/js/787.58d7bd52.chunk.js": "/CursoReact/static/js/787.58d7bd52.chunk.js",
     "static/media/redok.png": "/CursoReact/static/media/redok.1b04527f351998fd5769.png",
     "index.html": "/CursoReact/index.html",
-    "main.a046cb9b.css.map": "/CursoReact/static/css/main.a046cb9b.css.map",
-    "main.8524c56e.js.map": "/CursoReact/static/js/main.8524c56e.js.map",
+    "main.3dbaf5a0.css.map": "/CursoReact/static/css/main.3dbaf5a0.css.map",
+    "main.ef179bbb.js.map": "/CursoReact/static/js/main.ef179bbb.js.map",
     "787.58d7bd52.chunk.js.map": "/CursoReact/static/js/787.58d7bd52.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a046cb9b.css",
-    "static/js/main.8524c56e.js"
+    "static/css/main.3dbaf5a0.css",
+    "static/js/main.ef179bbb.js"
   ]
 }
