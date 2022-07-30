@@ -35,7 +35,7 @@ const ItemCount=(props)=>{
             
             <Button className={props.msg=="Modifica"? "buttons-sum-minus-cart":"buttons-sum-minus"} id={props.msg=="Modifica" ?"suma-cart":"suma"}  variant="outline-primary" onClick={sumar}>+</Button>{' '}
             
-            <Button className={props.msg=="Modifica"? "buttons-add-cart":"buttons-add"}  id={props.msg=="Modifica" ?"add-cart":"add"} variant="outline-primary" onClick={()=>props.onAdd(count,props.product)}>{props.msg}</Button>{' '}
+            <button className={props.msg=="Modifica"? "buttons-add-cart":"buttons-add"}  id={props.msg=="Modifica" ?"add-cart":"add"} variant="outline-primary" onClick={()=>props.onAdd(count,props.product)}>{props.msg}</button>{' '}
             
         </div>
         </div>

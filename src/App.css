@@ -73,12 +73,14 @@ p{
 
 /*----logo de la web for you-----*/
 .App-logo {
-  height: 80px;
+  height: 50px;
   pointer-events: none;
   float: left;
    
 }
-
+.App-logo-sticky{
+  height: 50px;
+}
 
 #navbar-b{
  
@@ -160,9 +162,14 @@ main{
   display: flex;/*content:flex*/
   flex-direction: column;
   text-align: center;
+  margin: 0 auto;
+
 }
 
+.content{
+  text-align: center;
 
+}
 .footer{
   width: 100%;
 }

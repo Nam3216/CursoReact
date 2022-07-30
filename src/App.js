@@ -21,7 +21,7 @@ import Footer from './components/Page/Footer';
 function App() {
 
   useEffect(()=>{
-    document.title="For Yoour - Online Clothing"
+    document.title="For You! - Online Clothing"
   },[])
   return (
     <div className="App">

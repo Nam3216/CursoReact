@@ -2,7 +2,7 @@
 
 .todos-banner h3{
     display: flex;
-    width: 400px;
+    width: 200px;
     align-items: center;
     justify-content: center;
     height: 100px;   
@@ -19,7 +19,7 @@
 
 .todos-banner2 h3{
     display: flex;
-    width: 400px;
+    width: 200px;
     align-items: center;
     justify-content: center;
     height: 100px;   

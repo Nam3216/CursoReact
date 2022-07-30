@@ -33,7 +33,7 @@ export const Home=()=>{
         <div className="home-container">
             <div className="home-container-container">
                <div className="title-home" >
-                    <h3>{"Las Mejores Marcas. Las Mejores Promociones."}</h3>
+                    <h3>{"For You Clothing!"}</h3>
                 </div>  
             <div className="home">
            

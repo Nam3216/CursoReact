@@ -13,31 +13,49 @@
     /*margin: 0 auto;*/
     text-align: center;
     margin: auto;
+ 
 }
 
 .title-home h3{
     display: flex;
-    width: 400px;
+    width: 250px;
     align-items: center;
     justify-content: center;
     height: 100px;   
     background-color: red;
    background-image: url("./redok.png");
-   background-size: 400px  53px;
-     margin: 0px auto;
+   background-size: 250px  53px;
+   margin: 0px auto;
     margin-top: 120px;
     margin-bottom: 30px;
     color: black;
     font-size: 22px;
     font-weight: 600;
     /*margin-left: 25vw;*/
+    margin-left: 250px;
+    
+    
 }
 
 .home-container-container{
     
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    
+    text-align: center;
+    
 }
 
+.home{
+    
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .title-home h3{
+        margin-left: 15vw;
+    }
+}
 @media screen and (min-width: 988px){
 
  
@@ -57,8 +75,52 @@
         font-size: 22px;
         font-weight: 600;
     }
+    .home-container-container{
+       
+       
+        margin-left: 0;
+     }
+
+     .home{
+    
+        margin: 0 auto;
+        margin-left: 0;
+    }
     
 }
+/*
+@media screen and (max-width: 988px){
+    .home-container{
+        margin: 0 auto;
+        text-align: center;
+        background-color: aqua;
+        
+     }
+    
+     .home-container-container{
+        margin: 0 auto;
+       
+      
+     }
+
+
+}*/
+
+@media screen and (max-width: 988px){
+
+    .home-container{
+       margin: 0 auto;
+       text-align: center;
+       
+    }
+   
+    .home-container-container{
+       margin: 0 auto;
+      
+       margin-left: 0;
+       margin-right: 20px;
+    }
+   }
 
 @media screen and (max-width: 560px){
 
@@ -70,7 +132,8 @@
 
  .home-container-container{
     margin: 0 auto;
+    margin-right: 10vw;
    
-   /* margin-left: 10vw;*/
+    margin-left: 0px;/*si se ve mal chico sacar eso y margin right arriba*/
  }
 }
