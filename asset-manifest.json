@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CursoReact/static/css/main.7baeb060.css",
+    "main.css": "/CursoReact/static/css/main.9d57d9cc.css",
     "main.js": "/CursoReact/static/js/main.e88f7929.js",
     "static/js/787.58d7bd52.chunk.js": "/CursoReact/static/js/787.58d7bd52.chunk.js",
     "static/media/redok.png": "/CursoReact/static/media/redok.1b04527f351998fd5769.png",
     "index.html": "/CursoReact/index.html",
-    "main.7baeb060.css.map": "/CursoReact/static/css/main.7baeb060.css.map",
+    "main.9d57d9cc.css.map": "/CursoReact/static/css/main.9d57d9cc.css.map",
     "main.e88f7929.js.map": "/CursoReact/static/js/main.e88f7929.js.map",
     "787.58d7bd52.chunk.js.map": "/CursoReact/static/js/787.58d7bd52.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7baeb060.css",
+    "static/css/main.9d57d9cc.css",
     "static/js/main.e88f7929.js"
   ]
 }
