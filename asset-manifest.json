@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CursoReact/static/css/main.197c2583.css",
-    "main.js": "/CursoReact/static/js/main.0aa72744.js",
+    "main.css": "/CursoReact/static/css/main.f2bb05f6.css",
+    "main.js": "/CursoReact/static/js/main.5892042b.js",
     "static/js/787.58d7bd52.chunk.js": "/CursoReact/static/js/787.58d7bd52.chunk.js",
     "static/media/redok.png": "/CursoReact/static/media/redok.1b04527f351998fd5769.png",
     "index.html": "/CursoReact/index.html",
-    "main.197c2583.css.map": "/CursoReact/static/css/main.197c2583.css.map",
-    "main.0aa72744.js.map": "/CursoReact/static/js/main.0aa72744.js.map",
+    "main.f2bb05f6.css.map": "/CursoReact/static/css/main.f2bb05f6.css.map",
+    "main.5892042b.js.map": "/CursoReact/static/js/main.5892042b.js.map",
     "787.58d7bd52.chunk.js.map": "/CursoReact/static/js/787.58d7bd52.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.197c2583.css",
-    "static/js/main.0aa72744.js"
+    "static/css/main.f2bb05f6.css",
+    "static/js/main.5892042b.js"
   ]
 }
